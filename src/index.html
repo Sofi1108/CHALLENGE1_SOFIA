@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Agenda de eventos tecnol&oacute;gicos, charlas y experiencias digitales."
+    />
+    <title>Pulse Tech | Eventos tecnol&oacute;gicos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Pulse Tech, inicio">
+        <span class="brand-mark"><span></span><span></span><span></span></span>
+        <span>pulse<span class="brand-dot">.</span>tech</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegaci&oacute;n principal">
+        <a href="#eventos">Eventos</a>
+        <a href="#comunidad">Comunidad</a>
+        <a href="#nosotros">Nosotros</a>
+      </nav>
+      <a class="header-cta" href="#suscripcion"
+        >Recibir novedades <span aria-hidden="true">&rarr;</span></a
+      >
+    </header>
+
+    <main id="inicio">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="pulse-dot"></span> La agenda que mueve el futuro
+          </p>
+          <h1 id="hero-title">
+            Ideas que<br /><em>encienden</em><br />el ma&ntilde;ana.
+          </h1>
+          <p class="hero-description">
+            Encuentra charlas, encuentros y experiencias para quienes
+            est&aacute;n construyendo lo que sigue.
+          </p>
+          <a class="button button-dark" href="#eventos"
+            >Explorar eventos <span aria-hidden="true">&darr;</span></a
+          >
+        </div>
+        <div
+          class="hero-art"
+          aria-label="Ilustraci&oacute;n abstracta de conexiones digitales"
+        >
+          <div class="art-ring ring-one"></div>
+          <div class="art-ring ring-two"></div>
+          <div class="art-grid"></div>
+          <div class="art-core"><span>24</span><small>SEP</small></div>
+          <span class="orbit orbit-one"></span>
+          <span class="orbit orbit-two"></span>
+          <span class="orbit orbit-three"></span>
+          <p class="art-caption">Conecta<br />con lo nuevo</p>
+        </div>
+      </section>
+
+      <section
+        class="events-section"
+        id="eventos"
+        aria-labelledby="events-title"
+      >
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Lo que est&aacute; pasando</p>
+            <h2 id="events-title">Pr&oacute;ximos eventos</h2>
+          </div>
+          <button class="reset-button" id="resetButton" type="button">
+            Volver a comenzar <span aria-hidden="true">&olarr;</span>
+          </button>
+        </div>
+
+        <div class="event-toolbar">
+          <div
+            class="filters"
+            role="group"
+            aria-label="Filtrar eventos por categor&iacute;a"
+          >
+            <button class="filter is-active" type="button" data-filter="Todos">
+              Todos
+            </button>
+            <button class="filter" type="button" data-filter="Conferencias">
+              Conferencias
+            </button>
+            <button class="filter" type="button" data-filter="Talleres">
+              Talleres
+            </button>
+            <button class="filter" type="button" data-filter="Meetups">
+              Meetups
+            </button>
+          </div>
+          <label class="search-box">
+            <span class="sr-only">Buscar un evento</span>
+            <input
+              id="searchInput"
+              type="search"
+              placeholder="Buscar evento..."
+              autocomplete="off"
+            />
+            <span aria-hidden="true">&#8981;</span>
+          </label>
+        </div>
+
+        <div class="events-grid" id="eventsGrid">
+          <article
+            class="event-card"
+            data-category="Conferencias"
+            data-search="future now madrid conferencia inteligencia artificial"
+          >
+            <div class="event-image image-ai">
+              <span class="event-label">Conferencia</span
+              ><span class="image-number">01</span>
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <strong>08</strong><span>OCT<br />2026</span>
+              </div>
+              <div>
+                <h3>Future Now: IA que transforma</h3>
+                <p>Madrid <span class="separator">&bull;</span> La Nave</p>
+              </div>
+            </div>
+            <a
+              href="#suscripcion"
+              class="event-link"
+              aria-label="Ver detalles de Future Now"
+              >Ver detalles <span aria-hidden="true">&rarr;</span></a
+            >
+          </article>
+
+          <article
+            class="event-card"
+            data-category="Talleres"
+            data-search="design systems barcelona taller diseño"
+          >
+            <div class="event-image image-design">
+              <span class="event-label">Taller</span
+              ><span class="image-number">02</span>
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <strong>15</strong><span>OCT<br />2026</span>
+              </div>
+              <div>
+                <h3>Design systems sin misterio</h3>
+                <p>Barcelona <span class="separator">&bull;</span> Palo Alto</p>
+              </div>
+            </div>
+            <a
+              href="#suscripcion"
+              class="event-link"
+              aria-label="Ver detalles de Design systems sin misterio"
+              >Ver detalles <span aria-hidden="true">&rarr;</span></a
+            >
+          </article>
+
+          <article
+            class="event-card"
+            data-category="Meetups"
+            data-search="data afterwork valencia meetup datos"
+          >
+            <div class="event-image image-data">
+              <span class="event-label">Meetup</span
+              ><span class="image-number">03</span>
+            </div>
+            <div class="event-content">
+              <div class="event-date">
+                <strong>22</strong><span>OCT<br />2026</span>
+              </div>
+              <div>
+                <h3>Data afterwork: datos con sentido</h3>
+                <p>Valencia <span class="separator">&bull;</span> Wayco</p>
+              </div>
+            </div>
+            <a
+              href="#suscripcion"
+              class="event-link"
+              aria-label="Ver detalles de Data afterwork"
+              >Ver detalles <span aria-hidden="true">&rarr;</span></a
+            >
+          </article>
+        </div>
+        <p class="empty-state" id="emptyState" hidden>
+          No encontramos eventos con esa b&uacute;squeda.
+        </p>
+      </section>
+
+      <section class="community-section" id="comunidad">
+        <div>
+          <p class="eyebrow">Una red en movimiento</p>
+          <h2>
+            El futuro se construye<br /><em>en compa&ntilde;&iacute;a.</em>
+          </h2>
+        </div>
+        <div class="community-note">
+          <p>
+            Personas curiosas, equipos valientes y conversaciones que dejan algo
+            encendido.
+          </p>
+          <a class="text-link" href="#suscripcion"
+            >&Uacute;nete a la comunidad
+            <span aria-hidden="true">&rarr;</span></a
+          >
+        </div>
+      </section>
+
+      <section
+        class="subscribe-section"
+        id="suscripcion"
+        aria-labelledby="subscribe-title"
+      >
+        <div>
+          <p class="eyebrow">No te pierdas lo siguiente</p>
+          <h2 id="subscribe-title">Una buena idea<br />llega a tiempo.</h2>
+        </div>
+        <form class="subscribe-form" id="subscribeForm">
+          <label class="sr-only" for="emailInput">Tu email</label>
+          <input id="emailInput" type="email" placeholder="Tu email" required />
+          <button class="button button-light" type="submit">
+            Ap&uacute;ntame <span aria-hidden="true">&rarr;</span>
+          </button>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="nosotros">
+      <p>&copy; 2026 Pulse Tech</p>
+      <p>Hecho para quienes preguntan: &iquest;y ahora qu&eacute;?</p>
+      <a href="#inicio">Volver arriba &uarr;</a>
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
